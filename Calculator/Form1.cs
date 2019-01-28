@@ -16,5 +16,20 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Display.AppendText("1");      
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDEL_Click(object sender, EventArgs e)
+        {
+            Display.Text.Remove( (Display.TextLength) == 0 ? 0 : (Display.TextLength) - 1);
+        }
     }
 }
