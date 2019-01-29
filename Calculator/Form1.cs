@@ -141,6 +141,65 @@ namespace Calculator
                     Display.Text = Display.Text.Insert(0, "-");
             }
         }
+        
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            switch (e.KeyChar)
+            {
+                case '0':
+                    btnZero_Click(sender, e);
+                    break;
+                case '1':
+                    btnOne_Click(sender, e);
+                    break;
+                case '2':
+                    btnTwo_Click(sender, e);
+                    break;
+                case '3':
+                    btnThree_Click(sender, e);
+                    break;
+                case '4':
+                    btnFour_Click(sender, e);
+                    break;
+                case '5':
+                    btnFive_Click(sender, e);
+                    break;
+                case '6':
+                    btnSix_Click(sender, e);
+                    break;
+                case '7':
+                    btnSeven_Click(sender, e);
+                    break;
+                case '8':
+                    btnEight_Click(sender, e);
+                    break;
+                case '9':
+                    btnNine_Click(sender, e);
+                    break;
+                case '/':
+                    btnDivide_Click(sender, e);
+                    break;
+                case '=':
+                    btnEquals_Click(sender, e);
+                    break;
+                case '-':
+                    btnNegitive_Click(sender, e);
+                    break;
+                case '*':
+                    btnMultiply_Click(sender, e);
+                    break;
+                case '+':
+                    btnPlus_Click(sender, e);
+                    break;
+                default:
+                    //nothing
+                    break;
+                
+            }
+        }
+
+
         #endregion
 
         #region Operations
@@ -275,7 +334,6 @@ namespace Calculator
                 Display.Text = (1/(Convert.ToDouble(Display.Text))).ToString();
             }
         }
-
 
         private void btnSQRT_Click(object sender, EventArgs e)
         {
