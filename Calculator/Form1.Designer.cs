@@ -81,6 +81,7 @@
             this.btnPosNeg.TabIndex = 1;
             this.btnPosNeg.Text = "+/-";
             this.btnPosNeg.UseVisualStyleBackColor = true;
+            this.btnPosNeg.Click += new System.EventHandler(this.btnPosNeg_Click);
             // 
             // btnOne
             // 
@@ -135,7 +136,7 @@
             this.btnFraction.TabIndex = 6;
             this.btnFraction.Text = "1/X";
             this.btnFraction.UseVisualStyleBackColor = true;
-            this.btnFraction.Click += new System.EventHandler(this.button7_Click);
+            this.btnFraction.Click += new System.EventHandler(this.btnFraction_Click);
             // 
             // btnXYExpo
             // 
@@ -311,6 +312,7 @@
             this.btnDecimal.TabIndex = 22;
             this.btnDecimal.Text = ".";
             this.btnDecimal.UseVisualStyleBackColor = true;
+            this.btnDecimal.Click += new System.EventHandler(this.btnDecimal_Click);
             // 
             // btnEquals
             // 
@@ -329,18 +331,21 @@
             this.Display.Margin = new System.Windows.Forms.Padding(1);
             this.Display.Name = "Display";
             this.Display.ReadOnly = true;
+            this.Display.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Display.Size = new System.Drawing.Size(192, 20);
             this.Display.TabIndex = 24;
+            this.Display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblPart2
             // 
+            this.lblPart2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPart2.AutoSize = true;
             this.lblPart2.Location = new System.Drawing.Point(22, 7);
             this.lblPart2.Name = "lblPart2";
             this.lblPart2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblPart2.Size = new System.Drawing.Size(13, 13);
+            this.lblPart2.Size = new System.Drawing.Size(0, 13);
             this.lblPart2.TabIndex = 26;
-            this.lblPart2.Text = "L";
+            this.lblPart2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Form1
             // 
@@ -375,6 +380,7 @@
             this.Controls.Add(this.btnSQRT);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Form1";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Nathans Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
